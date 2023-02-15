@@ -17,7 +17,7 @@
     "synth": "cdk synth",
     "test": "npm run lint && npm run jest",
     "jest": "jest",
-    "tsc": "tsc",
+    "tsc": "tsc --skipLibCheck",
     "watch": "tsc -w"
   },
   "devDependencies": {
