@@ -5,7 +5,10 @@ module.exports = {
     jest: true,
     node: true,
   },
-  extends: ['plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended'],
+  extends: [
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   settings: {
@@ -52,7 +55,7 @@ module.exports = {
     'arrow-body-style': ['error', 'as-needed'],
     'computed-property-spacing': ['error', 'never'],
     'func-style': ['warn', 'expression'],
-    'indent': ['error', 2, { SwitchCase: 1 }],
+    indent: ['error', 2, { SwitchCase: 1 }],
     'keyword-spacing': 'error',
     'newline-before-return': 2,
     'no-console': 0,
@@ -65,9 +68,9 @@ module.exports = {
     'no-unused-vars': 'off',
     'object-curly-spacing': ['error', 'always'],
     'prefer-arrow-callback': 'error',
-    'quotes': ['error', 'single', { allowTemplateLiterals: true }],
-    'semi': ['error', 'never', { 'beforeStatementContinuationChars': 'never' }],
-    'semi-spacing': ['error', { 'after': true, 'before': false }],
+    quotes: ['error', 'single', { allowTemplateLiterals: true }],
+    semi: ['error', 'never', { beforeStatementContinuationChars: 'never' }],
+    'semi-spacing': ['error', { after: true, before: false }],
     'semi-style': ['error', 'first'],
   },
 }

@@ -4,21 +4,18 @@ export const handler = async (event: S3CreateEvent, context: Context): Promise<o
   console.log('event', event)
   try {
     const record = event.Records[0] as S3EventRecord
-    const {
-      bucket,
-      object,
-    } = record.s3
+    const { bucket, object } = record.s3
     console.log('bucket', bucket)
     console.log('object', object)
 
     return {
       statusCode: 200,
-      body: JSON.stringify({})
+      body: JSON.stringify({}),
     }
   } catch (err: unknown) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ 'error': err })
+      body: JSON.stringify({ error: err }),
     }
   }
 }

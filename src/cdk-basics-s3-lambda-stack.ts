@@ -27,9 +27,7 @@ export class CdkBasicsS3LambdaStack extends Stack {
       timeout: Duration.seconds(90),
       environment: {
         REGION: Stack.of(this).region,
-        AZ: JSON.stringify(
-          Stack.of(this).availabilityZones,
-        ),
+        AZ: JSON.stringify(Stack.of(this).availabilityZones),
       },
     })
     myBucket.grantReadWrite(myLambda)
@@ -51,9 +49,11 @@ export class CdkBasicsS3LambdaStack extends Stack {
     //     ],
     //   }),
     // )
-    myLambda.addEventSource(new S3EventSource(myBucket, {
-      events: [EventType.OBJECT_CREATED_PUT],
-    }))
+    myLambda.addEventSource(
+      new S3EventSource(myBucket, {
+        events: [EventType.OBJECT_CREATED_PUT],
+      })
+    )
 
     new CfnOutput(this, 'myLambdaArn', {
       value: myLambda.functionArn,
