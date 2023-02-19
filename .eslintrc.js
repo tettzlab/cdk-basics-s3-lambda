@@ -25,7 +25,6 @@ module.exports = {
     '@typescript-eslint/camelcase': ['off'],
     '@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
     '@typescript-eslint/explicit-member-accessibility': 'error',
-    '@typescript-eslint/indent': ['error', 2, { SwitchCase: 1 }],
     '@typescript-eslint/interface-name-prefix': ['off'],
     '@typescript-eslint/member-delimiter-style': ['error', { multiline: { delimiter: 'none' } }],
     '@typescript-eslint/member-ordering': [
@@ -55,7 +54,6 @@ module.exports = {
     'arrow-body-style': ['error', 'as-needed'],
     'computed-property-spacing': ['error', 'never'],
     'func-style': ['warn', 'declaration'],
-    indent: ['error', 2, { SwitchCase: 1 }],
     'keyword-spacing': 'error',
     'newline-before-return': 'off',
     'no-console': 0,

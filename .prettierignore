@@ -1,3 +1,7 @@
 .vscode
+cdk.json
 cdk.out
-lib
+build
+bundle
+package.json
+package-lock.json
