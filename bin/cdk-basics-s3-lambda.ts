@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register'
 import * as cdk from 'aws-cdk-lib'
-import { CdkBasicsS3LambdaStack } from '../src/cdk-basics-s3-lambda-stack'
+import { CdkBasicsS3LambdaStack } from '../stack/cdk-basics-s3-lambda-stack'
 
 const app = new cdk.App()
 new CdkBasicsS3LambdaStack(app, 'CdkBasicsS3LambdaStack', {
