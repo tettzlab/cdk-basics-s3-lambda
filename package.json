@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "npm run tsc && npm run bundle && npm run test",
-    "bundle": "rimraf bundle && esbuild --bundle --platform=node --target=node18 --outbase=./lambda/ --outdir=./bundle/ --sourcemap ./lambda/**/*.ts",
+    "bundle": "rimraf bundle/* && esbuild --bundle --platform=node --target=node18 --outbase=./lambda/ --outdir=./bundle/ --sourcemap ./lambda/**/*.ts",
     "cdk": "cdk",
     "clean": "rimraf build bundle",
     "deploy": "cdk deploy",
