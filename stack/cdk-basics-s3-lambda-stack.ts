@@ -1,6 +1,6 @@
 import { Stack, StackProps, CfnOutput } from 'aws-cdk-lib'
 import { Construct } from 'constructs'
-import { S3Lambda } from './s3-lambda'
+import { S3Lambda } from '../lib/s3-lambda'
 
 export class CdkBasicsS3LambdaStack extends Stack {
   public constructor(scope: Construct, id: string, props?: StackProps) {

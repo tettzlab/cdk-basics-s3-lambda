@@ -1,10 +1,4 @@
 .vscode
 cdk.out
-build
+dist
 bundle
-bin/**/*.js
-bin/**/*.d.ts
-stack/**/*.js
-stack/**/*.d.ts
-test/**/*.js
-test/**/*.d.ts
