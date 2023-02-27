@@ -7,7 +7,7 @@ describe('CdkBasicsS3LambdaStack', () => {
   const stack = new CdkApp.CdkBasicsS3LambdaStack(app, 'MyTestStack')
 
   test('should have 3 lambda functions.', () => {
-    Template.fromStack(stack).resourceCountIs('AWS::Lambda::Function', 2)
+    Template.fromStack(stack).resourceCountIs('AWS::Lambda::Function', 3)
   })
   test('should have 2 buckets.', () => {
     Template.fromStack(stack).resourceCountIs('AWS::S3::Bucket', 2)
